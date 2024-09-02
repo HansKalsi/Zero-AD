@@ -1,0 +1,171 @@
+#### Local Types ####
+@roman_fort = "gfx/interface/icons/culture_innovations/roman_fort.png"
+@roman_siege_machines = "gfx/interface/icons/culture_innovations/roman_siege_machines.png"
+@aqueducts = "gfx/interface/icons/culture_innovations/aqueducts.png"
+@ancient_roman_concrete = "gfx/interface/icons/culture_innovations/ancient_roman_concrete.png"
+@roman_social_security = "gfx/interface/icons/culture_innovations/roman_social_security.png"
+@roman_roads = "gfx/interface/icons/culture_innovations/roman_roads.png"
+@the_julian_calendar = "gfx/interface/icons/culture_innovations/the_julian_calendar.png"
+@germanic_spirit = "gfx/interface/icons/culture_innovations/germanic_spirit.png"
+@iberian_silver = "gfx/interface/icons/culture_innovations/iberian_silver.png"
+@roman_eagle = "gfx/interface/icons/culture_innovations/roman_eagle.png"
+@celtic_bravery = "gfx/interface/icons/culture_innovations/celtic_bravery.png"
+
+#culture_group_military
+# Roman Fort
+innovation_roman_fort = {
+	group = culture_group_military
+	culture_era = culture_era_classical
+	icon = @roman_fort
+	
+	custom = unlock_classical_fortification_buildings
+	character_modifier = {
+		build_speed = -0.05
+	}
+	
+	flag = global_regular
+	flag = classical_era_regular
+}
+# Roman Siege Machines
+innovation_roman_siege_machines = {
+	group = culture_group_military
+	culture_era = culture_era_classical
+	icon = @roman_siege_machines
+
+	custom = unlock_classical_siege_engines
+	character_modifier = {
+		siege_speed = 0.1
+	}
+
+	flag = global_regular
+	flag = classical_era_regular
+}
+
+#culture_group_civic
+# Aqueducts
+innovation_aqueducts = {
+	group = culture_group_civic
+	culture_era = culture_era_classical
+	icon = @aqueducts
+	
+    character_modifier = {
+        development_growth_factor = 0.20
+    }
+
+	flag = global_regular
+	flag = classical_era_regular
+}
+# Ancient Roman Concrete
+innovation_ancient_roman_concrete = {
+	group = culture_group_civic
+	culture_era = culture_era_classical
+	icon = @ancient_roman_concrete
+
+	county_modifier = {
+		building_slot_add = 1
+	}
+
+	flag = global_regular
+	flag = classical_era_regular
+}
+# Roman Social Security
+innovation_roman_social_security = {
+	group = culture_group_civic
+	culture_era = culture_era_classical
+	icon = @roman_social_security
+
+	custom = unlock_roman_social_security
+	character_modifier = {
+		monthly_piety = 0.10
+		same_culture_opinion = 25
+		domain_tax_mult = -0.05
+	}
+
+	flag = global_regular
+	flag = classical_era_regular
+}
+# Roman Roads
+innovation_roman_roads = {
+	group = culture_group_civic
+	culture_era = culture_era_classical
+	icon = @roman_roads
+
+	character_modifier = {
+		movement_speed = 0.1
+	}
+
+	flag = global_regular
+	flag = classical_era_regular
+}
+# The Julian Calendar
+innovation_the_julian_calendar = {
+	group = culture_group_civic
+	culture_era = culture_era_classical
+	icon = @the_julian_calendar
+
+	character_modifier = {
+		fertility = 0.05
+		different_culture_opinion = 10
+	}
+
+	flag = global_regular
+	flag = classical_era_regular
+}
+
+#culture_group_regional
+# Germanic Spirit (for Germania)
+innovation_germanic_spirit = {
+	group = culture_group_regional
+	culture_era = culture_era_classical
+	region = world_europe_west_germania
+	icon = @germanic_spirit
+
+	character_modifier = {
+		monthly_prestige = 0.20
+	}
+
+	flag = global_regional
+	flag = classical_era_regional
+}
+# Iberian Silver (for Iberia)
+innovation_iberian_silver = {
+	group = culture_group_regional
+	culture_era = culture_era_classical
+	region = world_europe_west_iberia
+	icon = @iberian_silver
+
+	character_modifier = {
+		monthly_income = 0.10
+	}
+
+	flag = global_regional
+	flag = classical_era_regional
+}
+# Roman Eagle (for Italia)
+innovation_roman_eagle = {
+	group = culture_group_regional
+	culture_era = culture_era_classical
+	region = world_europe_south_italy
+	icon = @roman_eagle
+
+    character_modifier = {
+        development_growth_factor = 0.5
+    }
+
+	flag = global_regional
+	flag = classical_era_regional
+}
+# Celtic Bravery (for Gaul)
+innovation_celtic_bravery = {
+	group = culture_group_regional
+	culture_era = culture_era_classical
+	region = world_europe_west_francia
+	icon = @celtic_bravery
+
+	character_modifier = {
+		monthly_prestige = 0.20
+	}
+
+	flag = global_regional
+	flag = classical_era_regional
+}
